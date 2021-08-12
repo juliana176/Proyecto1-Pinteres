@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+header{
+  width: 100%;
+  margin-top: 17px;
+  margin-bottom: 2px;
+    
+}
+header ul{
+    list-style: none;
+    position: absolute;
+  
+}
+header ul li{
+    display: inline;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+header ul{
+    list-style: none;
+    position: absolute;
+    right: 20px;
+}
+
+header ul li button{
+    background: none;
+    border: 0;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    font-weight:bolder;
+    margin-top: 0px;
+    
+}
+
+header ul li button span {
+    vertical-align: middle;
+    justify-content: space-between;
+}
+
+.btn-top:hover{
+    background-color: rgba(149, 149, 149, 0.482);
+    
+    
+}
+.botones1{
+  margin-top: 5px;
+}
+
+.btn-user{
+    background-color: gray;
+    color: #FFF;
+    padding:  5px;
+
+}
+section ul{
+    list-style: none;
+    position: absolute;
+    left: 0px;
+    margin-bottom: 0px;
+   
+    
+}
+header section{
+  margin-top: 2px;
+  left: 30px;
+}
+section ul li{
+    display: inline-block;
+    margin-left: 0px;
+    left: 0; 
+    margin-top: 0px;
+}
+section ul li button{
+    background: none;
+    border: 0;
+    font-size: 15px;
+    padding: 5px;
+    color:black;
+    
+    position: relative;
+   
+    
+   
+}
+.btn-inicio{
+    background-color:black;
+    color:white;
+    border: none;
+    padding: 16px;
+    font-size: 15px;
+    font-weight:bolder;
+    border-radius: 500px; 
+    margin-top: 0px; 
+    
+}
+
+.btn-hoy{
+  background-color: transparent;
+  color: black;
+  padding: 8px;
+  overflow: hidden;
+    
+}
+
+
+.search{
+  
+    margin-top:0px;
+    width: 1100px;
+    height: 47px;
+    display: flex;
+    flex-grow: 7;
+    text-align: left;
+    border-radius: 30px; 
+    background-color: rgb(224, 220, 224);
+  }
+  
+  .search a{
+    padding: 10px 500px;
+  }
+  
+  .search input{
+    width: 90%;
+    border: none;
+    font-size: 15px;
+    color: none;
+    background-color: rgb(224, 220, 224);
+    margin-left: 10px;
+  }
+  
+section ol{
+    margin: auto;
+    text-align: justify;
+    list-style: none;
+}
+.img{
+    text-align: justify;
+    margin-top: 0px;
+    line-height:0;
+    display: inline-block;
+}
+.material-icons{
+  margin-left: -10px;
+  margin-top: 3px;
+}
+#icono-buscar{
+  margin-left: 10px;
+  padding-top: 6px ;
+}
+.item:hover  img {
+
+  filter: grayscale(1);
+  border-radius: 25px;
+}
+.avatar img{
+    width: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+   
+  }
+
+  #add{
+    position: fixed;
+    right: 2%;
+    bottom: 16%;
+    margin-top: 10px;
+    size: 50%;
+    width: 3%;
+ 
+}
+
+#help{
+  position: fixed;
+    right: 2%;
+    bottom: 1%;
+    margin-top: 3px;
+    width: 3%;
+}
+  
+
+  .item {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto; 
+    margin-bottom: 20px;
+    break-inside: avoid; 
+  }
+  
+  .item img :hover {
+    grid-column: 1;
+    border-radius: 25px;
+    overflow:hidden;
+   
+   
+  }
+  
+  .container img {
+   
+      width: 238px;
+      display: block;
+      margin-top: 109px;
+      cursor: zoom-in;
+      grid-template-columns: repeat(4, 1fr);
+    
+  }
+  
+  .item a {
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+    text-align: auto;
+    padding: 8px 16px 16px;
+  }
+  
+  .container {
+    column-count: 5;
+    column-gap: 60px;
+    width: 98%;
+    
+    margin: auto;
+  }
+  @media (max-width: 1000px){
+    main{
+            /* Reverse the axis of the header, making it vertical. */
+            flex-direction: column;
+            
+            /* Align items to the begining (the left) of the header. */
+            align-items: flex-start;
+    }
+}
+
+  @media screen and (min-width: 1200px) and (max-width: 1495px) {
+    .container {
+      column-count: 4;
+      column-gap: 10px;
+      width: 95%;
+ 
+      margin: auto;
+    }
+  }
+  
+  @media screen and (min-width: 890px) and (max-width: 1200px) {
+    .container {
+      column-count: 3;
+      column-gap: 10px;
+      width: 95%;
+      
+      margin: auto;
+    }
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 889px) {
+    .container {
+      column-count: 2;
+      column-gap: 10px;
+      width: 95%;
+
+      margin: auto;
+     
+    }
+  }
+  
+  @media screen and (min-width: 56px) and (max-width: 599px) {
+    .container {
+      column-count: 1;
+      column-gap: 10px;
+      width: 95%;
+      margin: auto;
+    }
+  }
+
+.btn-container{
+  text-align: center;
+  cursor: pointer;
+ position: absolute;
+
+}
